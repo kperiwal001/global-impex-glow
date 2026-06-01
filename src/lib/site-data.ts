@@ -55,9 +55,9 @@ export const categories: Category[] = [
     ],
   },
   {
-    slug: "tea-hot-beverages",
-    name: "Tea & Hot Beverages",
-    short: "Premium Indian tea brands for global supermarkets and HoReCa.",
+    slug: "tea-coffee",
+    name: "Tea & Coffee",
+    short: "Premium Indian tea and coffee brands for global supermarkets and HoReCa.",
     image: tea,
     brands: ["Tata Tea", "Taj Mahal", "Wagh Bakri", "Red Label", "Society Tea", "Brooke Bond", "Lipton", "Girnar", "Bru Coffee", "Nescafé India"],
     intro:
