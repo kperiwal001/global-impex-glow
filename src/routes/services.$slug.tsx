@@ -144,7 +144,7 @@ function ServicePage() {
             <p className="text-lg text-foreground/90 leading-relaxed">{body.lead}</p>
             <div className="gold-divider my-10" />
             <div className="space-y-10">
-              {body.sections.map((s) => (
+              {body.sections.map((s: { h: string; p: string }) => (
                 <div key={s.h}>
                   <h2 className="font-display text-2xl md:text-3xl">{s.h}</h2>
                   <p className="mt-4 text-muted-foreground leading-relaxed">{s.p}</p>

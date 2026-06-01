@@ -79,7 +79,7 @@ function CategoryPage() {
           <img src={c.image} alt={c.name} width={1024} height={768} loading="lazy" className="w-full aspect-[16/10] object-cover shadow-luxe" />
 
           <div className="prose prose-neutral max-w-none">
-            {c.body.map((p, i) => (
+            {c.body.map((p: string, i: number) => (
               <p key={i} className="text-muted-foreground leading-relaxed text-base">{p}</p>
             ))}
           </div>
@@ -88,7 +88,7 @@ function CategoryPage() {
             <div>
               <SectionEyebrow>{c.brands ? "Available Brands" : "Available Products"}</SectionEyebrow>
               <div className="mt-5 flex flex-wrap gap-3">
-                {(c.brands ?? c.items ?? []).map((b) => (
+                {(c.brands ?? c.items ?? []).map((b: string) => (
                   <span key={b} className="px-4 py-2 border border-gold/40 text-sm bg-card">{b}</span>
                 ))}
               </div>
@@ -103,7 +103,7 @@ function CategoryPage() {
           <div>
             <SectionEyebrow>Frequently Asked Questions</SectionEyebrow>
             <div className="mt-6 space-y-4">
-              {c.faqs.map((f) => (
+              {c.faqs.map((f: { q: string; a: string }) => (
                 <details key={f.q} className="group border border-border bg-card p-5 open:border-gold transition-colors">
                   <summary className="cursor-pointer flex items-center justify-between gap-4 font-display text-lg">
                     {f.q}

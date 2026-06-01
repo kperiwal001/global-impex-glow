@@ -92,7 +92,7 @@ function BlogPost() {
       <article className="mx-auto max-w-3xl px-6 py-16">
         <div className="text-xs uppercase tracking-[0.2em] text-gold-dim">{new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</div>
         <div className="mt-8 space-y-6 text-foreground/90 leading-relaxed">
-          {paragraphs.map((p, i) => (
+          {paragraphs.map((p: string, i: number) => (
             <p key={i}>{p}</p>
           ))}
         </div>
