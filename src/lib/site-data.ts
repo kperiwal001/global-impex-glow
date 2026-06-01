@@ -39,7 +39,7 @@ export const categories: Category[] = [
     name: "Indian Spices",
     short: "Authentic whole and ground spices from India's top brands.",
     image: spices,
-    brands: ["MDH", "Everest", "Catch"],
+    brands: ["MDH", "Everest", "Catch", "Badshah", "Eastern", "Aachi", "Ramdev", "Shan", "Suhana", "Goldiee"],
     intro:
       "Export-grade Indian spices sourced directly from authorized distributors of MDH, Everest and Catch — supplied in retail packs and bulk for international supermarkets and ethnic grocery chains.",
     body: [
@@ -59,7 +59,7 @@ export const categories: Category[] = [
     name: "Tea & Hot Beverages",
     short: "Premium Indian tea brands for global supermarkets and HoReCa.",
     image: tea,
-    brands: ["Tata Tea", "Taj Mahal", "Wagh Bakri", "Red Label"],
+    brands: ["Tata Tea", "Taj Mahal", "Wagh Bakri", "Red Label", "Society Tea", "Brooke Bond", "Lipton", "Girnar", "Bru Coffee", "Nescafé India"],
     intro:
       "Export Tata Tea, Taj Mahal, Wagh Bakri and Red Label in loose leaf, dust, tea bags and instant variants for international buyers and supermarket chains.",
     body: [
@@ -99,7 +99,7 @@ export const categories: Category[] = [
     name: "Snacks & Namkeen",
     short: "Branded Indian snacks and ready-to-eat namkeen.",
     image: snacks,
-    brands: ["Haldiram's", "Bikaji", "Bikano", "Balaji"],
+    brands: ["Haldiram's", "Bikaji", "Bikano", "Balaji", "Lay's India", "Kurkure", "Parle", "Britannia", "Sunfeast", "Too Yumm", "Garden", "Anand"],
     intro:
       "Export Indian namkeen, bhujia, mixtures, chips, papad and ready-to-eat snacks from Haldiram's, Bikaji, Bikano and Balaji for ethnic grocery stores, supermarkets and e-commerce sellers worldwide.",
     body: [
@@ -119,7 +119,7 @@ export const categories: Category[] = [
     name: "Instant Foods",
     short: "Maggi, MTR, Ching's and ready-to-cook Indian meals.",
     image: instant,
-    brands: ["Maggi", "MTR", "Ching's", "Gits"],
+    brands: ["Maggi", "MTR", "Ching's", "Gits", "Kohinoor", "Knorr", "Tasty Bite", "ITC Aashirvaad", "Patanjali", "Haldiram's RTE", "Yippee"],
     intro:
       "Ready-to-eat and ready-to-cook Indian meals, instant noodles, gravies, pastes, breakfast mixes and dessert mixes from Maggi, MTR, Ching's and Gits.",
     body: [
@@ -139,7 +139,7 @@ export const categories: Category[] = [
     name: "Cosmetics & Personal Care",
     short: "Indian beauty, skincare, haircare and personal grooming.",
     image: cosmetics,
-    brands: ["VLCC", "Himalaya", "Mamaearth", "Fogg", "Patanjali", "Dabur"],
+    brands: ["VLCC", "Himalaya", "Mamaearth", "Fogg", "Patanjali", "Dabur", "Lakmé", "Biotique", "Forest Essentials", "Khadi Natural", "Vicco", "Lotus Herbals", "Park Avenue", "Wow Skin Science", "Plum"],
     intro:
       "Authentic Indian cosmetics, herbal skincare, ayurvedic haircare and personal grooming from VLCC, Himalaya, Mamaearth, Fogg, Patanjali and Dabur.",
     body: [
@@ -159,7 +159,7 @@ export const categories: Category[] = [
     name: "Beverages & Juices",
     short: "Juices, soft drinks, energy drinks and traditional beverages.",
     image: beverages,
-    brands: ["Real", "Pepsi", "Coca-Cola", "Jeeru", "Paper Boat"],
+    brands: ["Real", "Pepsi", "Coca-Cola", "Jeeru", "Paper Boat", "Frooti", "Maaza", "Slice", "Appy Fizz", "Rooh Afza", "Rasna", "B Natural", "Tropicana India"],
     intro:
       "Export Real fruit juices, Pepsi, Coca-Cola, Jeeru, Paper Boat ethnic drinks and other Indian beverages in tetra packs, PET bottles and cans.",
     body: [
@@ -179,7 +179,7 @@ export const categories: Category[] = [
     name: "Pickles & Condiments",
     short: "Mother's Recipe, Nilons and authentic Indian pickles.",
     image: pickles,
-    brands: ["Mother's Recipe", "Nilons", "Priya", "Patak's"],
+    brands: ["Mother's Recipe", "Nilons", "Priya", "Patak's", "Pachranga", "Bedekar", "Tops", "Ramdev Pickles", "Pravin", "Druk", "Kissan"],
     intro:
       "Indian mango pickle, mixed pickle, lime pickle, chili pickle, chutneys, pastes and cooking sauces from Mother's Recipe, Nilons, Priya and Patak's.",
     body: [
@@ -358,5 +358,134 @@ export const blogPosts = [
     title: "How to Source FMCG Products from India",
     excerpt: "The complete sourcing playbook for distributors and wholesalers entering the Indian FMCG export market.",
     date: "2026-01-05",
+  },
+];
+
+import featBasmati from "@/assets/feat-basmati.jpg";
+import featGhee from "@/assets/feat-ghee.jpg";
+import featSweets from "@/assets/feat-sweets.jpg";
+import featPapad from "@/assets/feat-papad.jpg";
+import featAyurveda from "@/assets/feat-ayurveda.jpg";
+import featConfectionery from "@/assets/feat-confectionery.jpg";
+
+export type FeaturedProduct = {
+  name: string;
+  brand: string;
+  category: string;
+  image: string;
+  tag?: string;
+};
+
+export const featuredProducts: FeaturedProduct[] = [
+  { name: "Premium Basmati Rice", brand: "India Gate · Daawat · Kohinoor", category: "Grains", image: featBasmati, tag: "Bestseller" },
+  { name: "Pure Cow Ghee", brand: "Amul · Patanjali · Anik", category: "Dairy", image: featGhee, tag: "Export Grade" },
+  { name: "Indian Mithai & Sweets", brand: "Haldiram's · Bikano", category: "Sweets", image: featSweets, tag: "Festive" },
+  { name: "Papad & Wafers", brand: "Lijjat · Bikaji · Anand", category: "Snacks", image: featPapad },
+  { name: "Ayurvedic Supplements", brand: "Dabur · Patanjali · Himalaya", category: "Wellness", image: featAyurveda, tag: "Trending" },
+  { name: "Chocolates & Confectionery", brand: "Cadbury · Nestlé · Amul", category: "Confectionery", image: featConfectionery },
+];
+
+export type Testimonial = {
+  name: string;
+  role: string;
+  company: string;
+  country: string;
+  quote: string;
+  rating: number;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Rajesh Patel",
+    role: "Procurement Director",
+    company: "Patel Brothers Supermarket",
+    country: "Chicago, USA",
+    quote:
+      "Golden Impex has been our trusted Indian FMCG partner for three years. Their mixed-container model and on-time documentation are flawless — every shipment lands shelf-ready.",
+    rating: 5,
+  },
+  {
+    name: "Amir Al-Mansouri",
+    role: "Managing Partner",
+    company: "Gulf Grocery Trading LLC",
+    country: "Dubai, UAE",
+    quote:
+      "Authentic brands, transparent pricing and zero compromise on shelf life. Golden Impex consistently delivers premium Indian grocery that our customers demand.",
+    rating: 5,
+  },
+  {
+    name: "Priya Sharma",
+    role: "Founder",
+    company: "Spice Route Imports",
+    country: "Melbourne, Australia",
+    quote:
+      "From MDH spices to Tata Tea and Haldiram's snacks — every FCL container arrives perfectly packed. Their export team responds within hours, not days.",
+    rating: 5,
+  },
+  {
+    name: "James O'Connor",
+    role: "Category Manager",
+    company: "Eastern Foods UK",
+    country: "London, United Kingdom",
+    quote:
+      "Their private-label capability transformed our store-brand line. Quality matches the leading Indian brands at significantly better margins.",
+    rating: 5,
+  },
+  {
+    name: "Kwame Asante",
+    role: "Director",
+    company: "Asante Wholesale Ltd",
+    country: "Lagos, Nigeria",
+    quote:
+      "Reliable, professional and genuinely competitive. Golden Impex is the only Indian sourcing partner we recommend across West Africa.",
+    rating: 5,
+  },
+  {
+    name: "Maria Rodriguez",
+    role: "Buyer",
+    company: "Continental Asian Foods",
+    country: "Toronto, Canada",
+    quote:
+      "Documentation, fumigation certificates, FDA labelling — every detail handled. Working with Golden Impex feels like having an export desk in India.",
+    rating: 5,
+  },
+];
+
+import licenseFssai from "@/assets/license-fssai.jpg";
+import licenseIec from "@/assets/license-iec.jpg";
+import licenseApeda from "@/assets/license-apeda.jpg";
+import licenseIso from "@/assets/license-iso.jpg";
+
+export type License = {
+  code: string;
+  name: string;
+  description: string;
+  image: string;
+};
+
+export const licenses: License[] = [
+  {
+    code: "FSSAI",
+    name: "Food Safety License",
+    description: "Issued by Food Safety & Standards Authority of India — certifying compliance with food safety regulations.",
+    image: licenseFssai,
+  },
+  {
+    code: "IEC",
+    name: "Import Export Code",
+    description: "Issued by DGFT, Ministry of Commerce — authorizing all cross-border trade operations.",
+    image: licenseIec,
+  },
+  {
+    code: "APEDA",
+    name: "Agricultural & Processed Food Exports",
+    description: "Registered with APEDA for the export of processed food products from India.",
+    image: licenseApeda,
+  },
+  {
+    code: "ISO 9001",
+    name: "Quality Management System",
+    description: "International certification for quality management across sourcing, packing and export operations.",
+    image: licenseIso,
   },
 ];
