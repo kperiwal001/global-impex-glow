@@ -39,7 +39,7 @@ export const categories: Category[] = [
     name: "Indian Spices",
     short: "Authentic whole and ground spices from India's top brands.",
     image: spices,
-    brands: ["MDH", "Everest", "Catch"],
+    brands: ["MDH", "Everest", "Catch", "Badshah", "Eastern", "Aachi", "Ramdev", "Shan", "Suhana", "Goldiee"],
     intro:
       "Export-grade Indian spices sourced directly from authorized distributors of MDH, Everest and Catch — supplied in retail packs and bulk for international supermarkets and ethnic grocery chains.",
     body: [
@@ -59,7 +59,7 @@ export const categories: Category[] = [
     name: "Tea & Hot Beverages",
     short: "Premium Indian tea brands for global supermarkets and HoReCa.",
     image: tea,
-    brands: ["Tata Tea", "Taj Mahal", "Wagh Bakri", "Red Label"],
+    brands: ["Tata Tea", "Taj Mahal", "Wagh Bakri", "Red Label", "Society Tea", "Brooke Bond", "Lipton", "Girnar", "Bru Coffee", "Nescafé India"],
     intro:
       "Export Tata Tea, Taj Mahal, Wagh Bakri and Red Label in loose leaf, dust, tea bags and instant variants for international buyers and supermarket chains.",
     body: [
@@ -99,7 +99,7 @@ export const categories: Category[] = [
     name: "Snacks & Namkeen",
     short: "Branded Indian snacks and ready-to-eat namkeen.",
     image: snacks,
-    brands: ["Haldiram's", "Bikaji", "Bikano", "Balaji"],
+    brands: ["Haldiram's", "Bikaji", "Bikano", "Balaji", "Lay's India", "Kurkure", "Parle", "Britannia", "Sunfeast", "Too Yumm", "Garden", "Anand"],
     intro:
       "Export Indian namkeen, bhujia, mixtures, chips, papad and ready-to-eat snacks from Haldiram's, Bikaji, Bikano and Balaji for ethnic grocery stores, supermarkets and e-commerce sellers worldwide.",
     body: [
@@ -119,7 +119,7 @@ export const categories: Category[] = [
     name: "Instant Foods",
     short: "Maggi, MTR, Ching's and ready-to-cook Indian meals.",
     image: instant,
-    brands: ["Maggi", "MTR", "Ching's", "Gits"],
+    brands: ["Maggi", "MTR", "Ching's", "Gits", "Kohinoor", "Knorr", "Tasty Bite", "ITC Aashirvaad", "Patanjali", "Haldiram's RTE", "Yippee"],
     intro:
       "Ready-to-eat and ready-to-cook Indian meals, instant noodles, gravies, pastes, breakfast mixes and dessert mixes from Maggi, MTR, Ching's and Gits.",
     body: [
@@ -139,7 +139,7 @@ export const categories: Category[] = [
     name: "Cosmetics & Personal Care",
     short: "Indian beauty, skincare, haircare and personal grooming.",
     image: cosmetics,
-    brands: ["VLCC", "Himalaya", "Mamaearth", "Fogg", "Patanjali", "Dabur"],
+    brands: ["VLCC", "Himalaya", "Mamaearth", "Fogg", "Patanjali", "Dabur", "Lakmé", "Biotique", "Forest Essentials", "Khadi Natural", "Vicco", "Lotus Herbals", "Park Avenue", "Wow Skin Science", "Plum"],
     intro:
       "Authentic Indian cosmetics, herbal skincare, ayurvedic haircare and personal grooming from VLCC, Himalaya, Mamaearth, Fogg, Patanjali and Dabur.",
     body: [
@@ -159,7 +159,7 @@ export const categories: Category[] = [
     name: "Beverages & Juices",
     short: "Juices, soft drinks, energy drinks and traditional beverages.",
     image: beverages,
-    brands: ["Real", "Pepsi", "Coca-Cola", "Jeeru", "Paper Boat"],
+    brands: ["Real", "Pepsi", "Coca-Cola", "Jeeru", "Paper Boat", "Frooti", "Maaza", "Slice", "Appy Fizz", "Rooh Afza", "Rasna", "B Natural", "Tropicana India"],
     intro:
       "Export Real fruit juices, Pepsi, Coca-Cola, Jeeru, Paper Boat ethnic drinks and other Indian beverages in tetra packs, PET bottles and cans.",
     body: [
@@ -179,7 +179,7 @@ export const categories: Category[] = [
     name: "Pickles & Condiments",
     short: "Mother's Recipe, Nilons and authentic Indian pickles.",
     image: pickles,
-    brands: ["Mother's Recipe", "Nilons", "Priya", "Patak's"],
+    brands: ["Mother's Recipe", "Nilons", "Priya", "Patak's", "Pachranga", "Bedekar", "Tops", "Ramdev Pickles", "Pravin", "Druk", "Kissan"],
     intro:
       "Indian mango pickle, mixed pickle, lime pickle, chili pickle, chutneys, pastes and cooking sauces from Mother's Recipe, Nilons, Priya and Patak's.",
     body: [
