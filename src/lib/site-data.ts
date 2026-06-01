@@ -360,3 +360,132 @@ export const blogPosts = [
     date: "2026-01-05",
   },
 ];
+
+import featBasmati from "@/assets/feat-basmati.jpg";
+import featGhee from "@/assets/feat-ghee.jpg";
+import featSweets from "@/assets/feat-sweets.jpg";
+import featPapad from "@/assets/feat-papad.jpg";
+import featAyurveda from "@/assets/feat-ayurveda.jpg";
+import featConfectionery from "@/assets/feat-confectionery.jpg";
+
+export type FeaturedProduct = {
+  name: string;
+  brand: string;
+  category: string;
+  image: string;
+  tag?: string;
+};
+
+export const featuredProducts: FeaturedProduct[] = [
+  { name: "Premium Basmati Rice", brand: "India Gate · Daawat · Kohinoor", category: "Grains", image: featBasmati, tag: "Bestseller" },
+  { name: "Pure Cow Ghee", brand: "Amul · Patanjali · Anik", category: "Dairy", image: featGhee, tag: "Export Grade" },
+  { name: "Indian Mithai & Sweets", brand: "Haldiram's · Bikano", category: "Sweets", image: featSweets, tag: "Festive" },
+  { name: "Papad & Wafers", brand: "Lijjat · Bikaji · Anand", category: "Snacks", image: featPapad },
+  { name: "Ayurvedic Supplements", brand: "Dabur · Patanjali · Himalaya", category: "Wellness", image: featAyurveda, tag: "Trending" },
+  { name: "Chocolates & Confectionery", brand: "Cadbury · Nestlé · Amul", category: "Confectionery", image: featConfectionery },
+];
+
+export type Testimonial = {
+  name: string;
+  role: string;
+  company: string;
+  country: string;
+  quote: string;
+  rating: number;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "Rajesh Patel",
+    role: "Procurement Director",
+    company: "Patel Brothers Supermarket",
+    country: "Chicago, USA",
+    quote:
+      "Golden Impex has been our trusted Indian FMCG partner for three years. Their mixed-container model and on-time documentation are flawless — every shipment lands shelf-ready.",
+    rating: 5,
+  },
+  {
+    name: "Amir Al-Mansouri",
+    role: "Managing Partner",
+    company: "Gulf Grocery Trading LLC",
+    country: "Dubai, UAE",
+    quote:
+      "Authentic brands, transparent pricing and zero compromise on shelf life. Golden Impex consistently delivers premium Indian grocery that our customers demand.",
+    rating: 5,
+  },
+  {
+    name: "Priya Sharma",
+    role: "Founder",
+    company: "Spice Route Imports",
+    country: "Melbourne, Australia",
+    quote:
+      "From MDH spices to Tata Tea and Haldiram's snacks — every FCL container arrives perfectly packed. Their export team responds within hours, not days.",
+    rating: 5,
+  },
+  {
+    name: "James O'Connor",
+    role: "Category Manager",
+    company: "Eastern Foods UK",
+    country: "London, United Kingdom",
+    quote:
+      "Their private-label capability transformed our store-brand line. Quality matches the leading Indian brands at significantly better margins.",
+    rating: 5,
+  },
+  {
+    name: "Kwame Asante",
+    role: "Director",
+    company: "Asante Wholesale Ltd",
+    country: "Lagos, Nigeria",
+    quote:
+      "Reliable, professional and genuinely competitive. Golden Impex is the only Indian sourcing partner we recommend across West Africa.",
+    rating: 5,
+  },
+  {
+    name: "Maria Rodriguez",
+    role: "Buyer",
+    company: "Continental Asian Foods",
+    country: "Toronto, Canada",
+    quote:
+      "Documentation, fumigation certificates, FDA labelling — every detail handled. Working with Golden Impex feels like having an export desk in India.",
+    rating: 5,
+  },
+];
+
+import licenseFssai from "@/assets/license-fssai.jpg";
+import licenseIec from "@/assets/license-iec.jpg";
+import licenseApeda from "@/assets/license-apeda.jpg";
+import licenseIso from "@/assets/license-iso.jpg";
+
+export type License = {
+  code: string;
+  name: string;
+  description: string;
+  image: string;
+};
+
+export const licenses: License[] = [
+  {
+    code: "FSSAI",
+    name: "Food Safety License",
+    description: "Issued by Food Safety & Standards Authority of India — certifying compliance with food safety regulations.",
+    image: licenseFssai,
+  },
+  {
+    code: "IEC",
+    name: "Import Export Code",
+    description: "Issued by DGFT, Ministry of Commerce — authorizing all cross-border trade operations.",
+    image: licenseIec,
+  },
+  {
+    code: "APEDA",
+    name: "Agricultural & Processed Food Exports",
+    description: "Registered with APEDA for the export of processed food products from India.",
+    image: licenseApeda,
+  },
+  {
+    code: "ISO 9001",
+    name: "Quality Management System",
+    description: "International certification for quality management across sourcing, packing and export operations.",
+    image: licenseIso,
+  },
+];
