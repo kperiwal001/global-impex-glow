@@ -1,8 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  "buildCommand": "bun run build",
+  "outputDirectory": ".output",
+  "framework": null,
+  "installCommand": "bun install",
+  "env": {
+    "NITRO_PRESET": "vercel"
+  }
 }
