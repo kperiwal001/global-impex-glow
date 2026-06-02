@@ -1,9 +1,6 @@
 {
   "buildCommand": "bun run build",
-  "outputDirectory": ".output",
+  "outputDirectory": "dist",
   "framework": null,
-  "installCommand": "bun install",
-  "env": {
-    "NITRO_PRESET": "vercel"
-  }
+  "installCommand": "bun install"
 }
