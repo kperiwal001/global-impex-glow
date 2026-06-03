@@ -16,10 +16,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "FMCG Exporter India | Golden Impex — Indian Grocery, Spices, Tea, Cosmetics" },
-      { name: "description", content: "Golden Impex is a leading FMCG exporter from India supplying authentic Indian spices, tea, snacks, cosmetics, beverages, pickles and grocery to global importers, distributors and supermarket chains." },
-      { property: "og:title", content: "FMCG Exporter India | Golden Impex" },
-      { property: "og:description", content: "Global sourcing partner for Indian FMCG products. MDH, Tata Tea, Maggi, Himalaya, Real and more." },
+      { title: "Golden Impex | FMCG Products Exporter" },
+      { name: "description", content: "Golden Impex is a trusted FMCG products exporter from India. We supply premium Indian spices, tea, snacks, cosmetics, beverages, pickles and grocery in bulk to importers, distributors and supermarket chains worldwide. FCL container sourcing, mixed grocery containers and private labelling available." },
+      { property: "og:title", content: "Golden Impex | FMCG Products Exporter" },
+      { property: "og:description", content: "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors." },
       { property: "og:url", content: "/" },
       { property: "og:image", content: heroImg },
       { property: "twitter:image", content: heroImg },
