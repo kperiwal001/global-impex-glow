@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: company.short },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0b0b0b" },
-      { title: "Lovable App" },
+      { title: "Golden Impex | FMCG Products Exporter" },
       { property: "og:title", content: "Lovable App" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "description", content: "Golden Impex Gateway is a B2B export website for sourcing and exporting Indian FMCG products globally." },
