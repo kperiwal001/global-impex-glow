@@ -88,7 +88,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors." },
       { name: "theme-color", content: "#0b0b0b" },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+    ],
     scripts: [
       {
         type: "application/ld+json",
