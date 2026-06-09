@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { company } from "@/lib/site-data";
+import logoGold from "@/assets/logo-gold.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -19,9 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-50 backdrop-blur bg-ink/85 border-b border-gold/20">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="h-10 w-10 rounded-sm bg-gradient-gold grid place-items-center font-display text-ink text-xl font-bold">
-            G
-          </div>
+          <img src={logoGold} alt="Golden Impex logo" className="h-11 w-11 object-contain" />
           <div className="leading-tight">
             <div className="font-display text-cream text-lg tracking-wide">Golden Impex</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-gold/80">{company.tagline.split(" ").slice(0,3).join(" ")}</div>
