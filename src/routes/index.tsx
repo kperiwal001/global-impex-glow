@@ -39,9 +39,10 @@ const advantages = [
 ];
 
 const trustBrands = [
-  "MDH", "Tata Tea", "Haldiram's", "Maggi", "Himalaya", "Dabur",
+  "MDH", "Haldiram's", "Maggi", "Himalaya", "Dabur",
   "Patanjali", "Real", "Mother's Recipe", "Bikaji", "Amul", "Cadbury",
-  "Britannia", "Parle", "Wagh Bakri", "Everest",
+  "Britannia", "Parle", "Wagh Bakri", "Everest", "Aachi", "ShyamDhani",
+  "Guruji", "Badshah", "Society Tea", "Nikon's",
 ];
 
 function Home() {
