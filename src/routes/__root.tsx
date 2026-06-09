@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -29,7 +30,10 @@ function NotFoundComponent() {
             The page you're looking for doesn't exist or has been moved.
           </p>
           <div className="mt-6">
-            <Link to="/" className="inline-flex items-center justify-center bg-ink text-cream px-5 py-2.5 text-sm hover:bg-gradient-gold hover:text-ink transition-colors">
+            <Link
+              to="/"
+              className="inline-flex items-center justify-center bg-ink text-cream px-5 py-2.5 text-sm hover:bg-gradient-gold hover:text-ink transition-colors"
+            >
               Go home
             </Link>
           </div>
@@ -64,7 +68,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           >
             Try again
           </button>
-          <a href="/" className="border border-input px-5 py-2.5 text-sm hover:bg-accent">Go home</a>
+          <a href="/" className="border border-input px-5 py-2.5 text-sm hover:bg-accent">
+            Go home
+          </a>
         </div>
       </div>
     </div>
@@ -77,15 +83,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Golden Impex | FMCG Products Exporter" },
-      { name: "description", content: "Golden Impex is a trusted FMCG products exporter from India supplying spices, tea, snacks, cosmetics, beverages, pickles and grocery to global importers and distributors worldwide." },
+      {
+        name: "description",
+        content:
+          "Golden Impex is a trusted FMCG products exporter from India supplying spices, tea, snacks, cosmetics, beverages, pickles and grocery to global importers and distributors worldwide.",
+      },
       { name: "author", content: company.name },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: company.short },
       { property: "og:title", content: "Golden Impex | FMCG Products Exporter" },
-      { property: "og:description", content: "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors." },
+      {
+        property: "og:description",
+        content:
+          "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Golden Impex | FMCG Products Exporter" },
-      { name: "twitter:description", content: "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors." },
+      {
+        name: "twitter:description",
+        content:
+          "Trusted FMCG products exporter from India. Bulk sourcing of spices, tea, snacks, cosmetics and grocery for global importers and distributors.",
+      },
       { name: "theme-color", content: "#0b0b0b" },
     ],
     links: [
@@ -146,6 +164,7 @@ function RootComponent() {
       <Footer />
       <WhatsAppButton />
       <Toaster />
+      <Analytics />
     </QueryClientProvider>
   );
 }
